@@ -1,0 +1,13 @@
+%{
+#include<stdio.h>
+%}
+%%
+[0-9]+ {printf("\n%s is a positive",yytext);}
+[^0-9].+ {printf("\n%s is a negative",yytext);}
+%%
+
+int yywrap(){}
+int main()
+{
+while(yylex());
+}

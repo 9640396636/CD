@@ -1,0 +1,13 @@
+%{
+#include<stdio.h>
+%}
+%%
+[if|else|main|void|return|switch|case|int|char|printf|scanf]+ {printf("\n%s is a keyword",yytext);}
+.+ {printf("\n%s is not keyword",yytext);}
+%%
+
+int yywrap(){}
+int main()
+{
+while(yylex());
+}
