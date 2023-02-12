@@ -12,17 +12,3 @@ int main()
 int yywrap()
 { }
 
-Output:
-
-G:\lex>flex mobile.l
-
-G:\lex>gcc lex.yy.c
-
-G:\lex>a.exe
-
-Enter Mobile Number : 9640396636
-
-Mobile Number Valid
-
-G:\lex>
-
