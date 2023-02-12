@@ -21,16 +21,3 @@ printf("Number of Constants : %d\n", cons);
 fclose(yyin);  
 }
 
-Output:
-
-G:\lex>flex countconstants.l
-
-G:\lex>gcc lex.yy.c
-
-G:\lex>a.exe
-Enter File Name : sample.c
-314 is a constant
-30 is a constant
-Number of Constants : 2
-
-G:\lex>
